@@ -4,6 +4,16 @@
   padding: 2rem;
   text-align: center;
 }
+.done{
+  text-decoration: line-through;
+  color: rgba(169, 169, 169, 0.232);
+}
+.ndone{
+  font-weight: bold;
+}
+li{
+  display: flex;
+}
 
 .logo {
   height: 6em;

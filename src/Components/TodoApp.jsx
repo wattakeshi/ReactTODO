@@ -118,7 +118,7 @@ const handleToggle = async (id,statusAtual) => {
 <ul>
     {todo.map((task)=>(
          <li key={task.id}>
-            {task.text}
+            {task.done? <p className="done">{task.text}</p> : <p className="ndone">{task.text}</p> }
             <button onClick={() => handleToggle(task.id, task.done)}>FEITA</button>
             <button onClick={() => handleDeletar(task.id)}>DELETAR</button>
          </li>)

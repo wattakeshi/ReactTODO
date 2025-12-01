@@ -3,17 +3,17 @@
     {
       "id": "b520",
       "text": "verificar pastas",
-      "done": false
+      "done": true
     },
     {
       "id": "ed89",
       "text": "arrumar o API",
-      "done": false
+      "done": true
     },
     {
       "id": "6268",
       "text": "verificar mudancas",
-      "done": false
+      "done": true
     }
   ]
 }
