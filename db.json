@@ -14,6 +14,14 @@
       "id": "a987",
       "text": "Colocar todos os componentes",
       "done": false
+    },
+    {
+      "id": "50f8",
+      "text": "Todo",
+      "done": true
     }
+  ],
+  "users": [
+    { "id": 1, "email": "takeshi@email.com", "password": "123", "token": "fake-jwt-token-abcde" }
   ]
 }
