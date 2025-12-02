@@ -1,19 +1,19 @@
 {
   "todos": [
     {
-      "id": "b520",
-      "text": "verificar pastas",
-      "done": true
-    },
-    {
-      "id": "ed89",
-      "text": "arrumar o API",
-      "done": true
-    },
-    {
       "id": "6268",
       "text": "verificar mudancas",
       "done": true
+    },
+    {
+      "id": "dd13",
+      "text": "Adicionar tarefas",
+      "done": false
+    },
+    {
+      "id": "a987",
+      "text": "Colocar todos os componentes",
+      "done": false
     }
   ]
 }

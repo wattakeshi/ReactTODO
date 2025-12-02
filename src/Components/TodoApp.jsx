@@ -1,5 +1,7 @@
 
 import { useEffect, useState } from 'react'
+import TaskMaker from './TaskMaker'
+import TaskList from './TaskList'
 //useEffect para pegar informaoes ao iniciar o programa
 const URL = "http://localhost:3004/todos"
 const TodoApp = () => {
@@ -107,24 +109,9 @@ const handleToggle = async (id,statusAtual) => {
 
 //PARTE DO HTML
     <div>
-        {/* TITULO */}
         <h1>React TODO APP</h1>
-        {/* formulario */}
-<form onSubmit={handleSubmmit}>
-        <input type="text" value={input} onChange={(e) => setInput(e.target.value)}/>
-        <input type="submit" value="Enviar" />
-</form>
-{/* LISTA DE TAREFAS */}
-<ul>
-    {todo.map((task)=>(
-         <li key={task.id}>
-            {task.done? <p className="done">{task.text}</p> : <p className="ndone">{task.text}</p> }
-            <button onClick={() => handleToggle(task.id, task.done)}>FEITA</button>
-            <button onClick={() => handleDeletar(task.id)}>DELETAR</button>
-         </li>)
-        
-    )}
-</ul>
+<TaskMaker input={input} handleSubmmit={handleSubmmit} setInput={setInput}/>
+<TaskList todo={todo} handleDeletar={handleDeletar} handleToggle={handleToggle} />
     </div>
   )
 }
