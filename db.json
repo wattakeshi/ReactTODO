@@ -1,11 +1,6 @@
 {
   "todos": [
     {
-      "id": "6268",
-      "text": "verificar mudancas",
-      "done": true
-    },
-    {
       "id": "dd13",
       "text": "Adicionar tarefas",
       "done": false
@@ -16,12 +11,17 @@
       "done": false
     },
     {
-      "id": "50f8",
-      "text": "Todo",
-      "done": true
+      "id": "ffc5",
+      "text": "Verificar o sistema",
+      "done": false
     }
   ],
   "users": [
-    { "id": 1, "email": "takeshi@email.com", "password": "123", "token": "fake-jwt-token-abcde" }
+    {
+      "id": "1",
+      "email": "takeshi@email.com",
+      "password": "123",
+      "token": "fake-jwt-token-abcde"
+    }
   ]
 }

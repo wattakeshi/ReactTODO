@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
+import { useAuth } from "../Context/AuthContext";
 
 const Header = () => {
+  const {logout} = useAuth();
   return (
     <nav>
         <Link to="/">Home</Link>
-        <Link to="/Login">Entrar</Link>
+        <button onClick={logout}>SAIR</button>
     </nav>
   )
 }

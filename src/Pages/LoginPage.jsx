@@ -1,11 +1,13 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../Context/AuthContext';
 const URL = "http://localhost:3004/users"
  
 const LoginPage = () => {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
   const navigate = useNavigate();
+  const {login} = useAuth();
     
   const handleLogin = async(e) =>{
     e.preventDefault();
@@ -16,7 +18,7 @@ try{
  if (data.length > 0){
     const user = data[0] //se tiver, pegar o primeiro item do index da array
     const token = user.token //pegar o token do user que foi encontrado dentro do index 0
-    localStorage.setItem('userToken', token); //setar o token dentro do userToken da localstorage
+    login(user, token); //setar o token dentro do userToken da localstorage
     navigate('/'); //devolver para o / (inicio da pagina, home, HomePage)
  }else{
     alert("Email ou Senha incorreta")
