@@ -4,10 +4,9 @@ import { useAuth } from '../Context/AuthContext'
 
 const PrivateRoute = ({children}) => {
     const {isLoggedIn} = useAuth()
-    if (!isLoggedIn){
-        return <Navigate to="/login" replace />
-    }
-  return children;
+    if (isLoggedIn){
+        return children;
+    } return   <Navigate to="/login" replace />
 }
 
 export default PrivateRoute

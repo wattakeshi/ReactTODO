@@ -16,9 +16,9 @@ try{
  const data = await res.json();
  // data.length = verificar se teve alguma coisa correspondente ao fetch (se teve algo na array)
  if (data.length > 0){
-    const user = data[0] //se tiver, pegar o primeiro item do index da array
-    const token = user.token //pegar o token do user que foi encontrado dentro do index 0
-    login(user, token); //setar o token dentro do userToken da localstorage
+    const userData = data[0] //se tiver, pegar o primeiro item do index da array
+    const token = userData.token //pegar o token do user que foi encontrado dentro do index 0
+    login(token, userData);
     navigate('/'); //devolver para o / (inicio da pagina, home, HomePage)
  }else{
     alert("Email ou Senha incorreta")
