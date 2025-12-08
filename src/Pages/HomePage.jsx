@@ -108,9 +108,10 @@ const handleToggle = async (id,statusAtual) => {
 
 
 //PARTE DO HTML
-    <div>
+    <div className='border rounded-xl border-solid p-8 bg-neutral-50'>
         <Header />
-        <h1>React TODO APP</h1>
+        <h1 className='font-sans text-xl text-left'>React TODO APP</h1>
+        
 <TaskMaker input={input} handleSubmmit={handleSubmmit} setInput={setInput}/>
 <TaskList todo={todo} handleDeletar={handleDeletar} handleToggle={handleToggle} />
     </div>
