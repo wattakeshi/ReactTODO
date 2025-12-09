@@ -1,23 +1,48 @@
 {
   "todos": [
     {
-      "id": "fc01",
-      "text": "ad",
-      "done": true
-    },
-    {
-      "id": "9574",
-      "text": "asd",
-      "done": true
-    },
-    {
-      "id": "dcf0",
-      "text": "Mudar o layout",
+      "id": "dea5",
+      "text": "nodeJS / express",
       "done": false
     },
     {
-      "id": "7c90",
-      "text": "colocar mais tarefas",
+      "id": "f62c",
+      "text": "Criar servidor",
+      "done": false
+    },
+    {
+      "id": "81b5",
+      "text": "Rotas (GET/POST/PUT/DELETE)",
+      "done": false
+    },
+    {
+      "id": "0ba7",
+      "text": "Middleware auth simple",
+      "done": false
+    },
+    {
+      "id": "622f",
+      "text": "controllers",
+      "done": false
+    },
+    {
+      "id": "55f2",
+      "text": "PostgreSQL",
+      "done": false
+    },
+    {
+      "id": "0c67",
+      "text": "ORM (Prisma)",
+      "done": false
+    },
+    {
+      "id": "69e7",
+      "text": "JWT",
+      "done": false
+    },
+    {
+      "id": "b822",
+      "text": "pages / filters",
       "done": false
     }
   ],
